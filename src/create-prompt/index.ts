@@ -526,8 +526,8 @@ ${context.directPrompt ? `   - DIRECT INSTRUCTION: A direct instruction was prov
           ? `- Provide a URL to create a PR manually in this format:
         [Create a PR](${GITHUB_SERVER_URL}/${context.repository}/compare/${eventData.defaultBranch}...<branch-name>?quick_pull=1&title=<url-encoded-title>&body=<url-encoded-body>)
         - IMPORTANT: Use THREE dots (...) between branch names, not two (..)
-          Example: ${GITHUB_SERVER_URL}/${context.repository}/compare/main...feature-branch (correct)
-          NOT: ${GITHUB_SERVER_URL}/${context.repository}/compare/main..feature-branch (incorrect)
+              Example: ${GITHUB_SERVER_URL}/${context.repository}/compare/develop...feature-branch (correct)
+    NOT: ${GITHUB_SERVER_URL}/${context.repository}/compare/develop..feature-branch (incorrect)
         - IMPORTANT: Ensure all URL parameters are properly encoded - spaces should be encoded as %20, not left as spaces
           Example: Instead of "fix: update welcome message", use "fix%3A%20update%20welcome%20message"
         - The target-branch should be '${eventData.defaultBranch}'.

@@ -18,7 +18,7 @@ async function run() {
     const commentId = parseInt(process.env.CLAUDE_COMMENT_ID!);
     const githubToken = process.env.GITHUB_TOKEN!;
     const claudeBranch = process.env.CLAUDE_BRANCH;
-    const defaultBranch = process.env.DEFAULT_BRANCH || "main";
+    const defaultBranch = process.env.DEFAULT_BRANCH || "develop";
     const triggerUsername = process.env.TRIGGER_USERNAME;
 
     const context = parseGitHubContext();
